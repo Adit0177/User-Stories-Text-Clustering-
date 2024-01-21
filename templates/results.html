@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body  class="bg-gradient-to-r from-indigo-300 to-purple-400" id="result-body">
+    <h2 class="text-4xl text-center">Cluster Distribution</h2>
+    <!-- No need to include the bar_chart here -->
+
+    <h2 class="text-3xl mt-3 text-center">Cluster Word Clouds</h2>
+{% for cluster, wordcloud_image in cluster_wordclouds.items() %}
+    <h3 class="text-2xl text-center">Cluster {{ cluster }}</h3>
+    <img src="data:image/png;base64,{{ wordcloud_image }}" alt="Word Cloud for Cluster {{ cluster }}" class="wordcloud">
+{% endfor %}
+
+</body>
+</html>

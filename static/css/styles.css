@@ -1,0 +1,100 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, form, input {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a beautiful background */
+#index-body {
+    background: linear-gradient(to bottom right, #6A1B9A, #9C27B0);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#result-body{
+    /* background: linear-gradient(to bottom right, #6A1B9A, #9C27B0); */
+    font-family: 'Arial', sans-serif;
+
+}
+
+/* Style the form container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    padding: 15px;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+input[type="file"]:hover {
+    border-color: #555;
+}
+
+/* ... (previous styles) */
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #673AB7;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #5A2B8A;
+   
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    input[type="submit"] {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+}
+
+/* Adjustments for word clouds */
+/* ... (previous styles) */
+
+/* Adjustments for word clouds */
+/* ... (previous styles) */
+
+/* Adjustments for word clouds */
+/* ... (previous styles) */
+
+/* Adjustments for word clouds */
+.wordcloud {
+    max-width: 600px; /* Set the maximum width */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 20px auto; /* Center-align and add vertical margin */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: block;
+    clear: both; /* Ensure proper vertical alignment */
+}

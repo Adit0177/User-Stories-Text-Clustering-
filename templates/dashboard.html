@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h2>Word Cloud</h2>
+    <img src="data:image/png;base64,{{ wordcloud_base64 }}" alt="Word Cloud">
+    <!-- Add interactive components for exploring the data -->
+</body>
+</html>
